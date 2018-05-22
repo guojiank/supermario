@@ -7,10 +7,11 @@ import com.mygdx.game.screen.PlayScreen;
 public class MarioBros extends Game {
     public static final float V_WIDTH=400f;
     public static final float V_HEIGHT=208f;
-	public static final SpriteBatch batch = new SpriteBatch();
+	public SpriteBatch batch ;
 	
 	@Override
 	public void create () {
+	    batch = new SpriteBatch();
 		setScreen(new PlayScreen(this));
 	}
 
